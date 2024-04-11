@@ -1,0 +1,128 @@
+/* flight.css */
+body {
+    font-family: 'PLUS JAKARTA SANS', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #015831;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  .calculator {
+    width: 80%;
+    max-width: 400px;
+    background-color: #cdd193;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  h1 {
+    color: #015831;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #015831;
+    font-size: 14px;
+    text-align: left;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #015831;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 5px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #007bff;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #015831;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 48%;
+    font-size: 16px;
+    margin-right: 4%;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  #resetBtn {
+    margin-top: 10px;
+    background-color: #fff;
+    color: #015831;
+  }
+  
+  #resetBtn:hover {
+    background-color: #015831;
+    color: #fff;
+  }
+  
+  #result,
+  #tips {
+    margin-top: 20px;
+    font-size: 16px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  #result.hide,
+  #tips.hide {
+    opacity: 0;
+  }
+  
+/* flight.css */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px; /* Adjust the max-width as needed */
+  margin: auto;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,518 @@
+/* GENERAL */
+
+
+.lightBlue {
+    background-color: rgb(221, 221, 221);
+}
+
+#align {
+    text-align: center;
+
+}
+
+#noMargin {
+    margin: 0% !important; 
+ 
+
+}
+
+.noMargin {
+    margin: 0%;
+    background-color: white; 
+
+
+}
+
+#noPad {
+    padding: 0%;
+}
+
+#marginleft {
+    margin-left: 0% !important;
+
+}
+
+
+.size {
+    width: 100%;
+    padding-left: 2rem;
+
+}
+
+.positioning {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+
+
+/* HEADER */
+
+.gitHub{
+    padding-top: 1em;
+    height: 61px;
+}
+
+.linkedin {
+    padding-top: 1em;
+    height: 70px;
+}
+
+
+.headr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.itemHeadr {
+    padding-right: 1rem;
+}
+
+.itemHeadrClimatiq{
+font-size: 12px;
+padding-left: 1rem;
+}
+
+/* HEADING */
+
+h2{
+    background-color: #e7f1ff;
+    color: black;
+    font: sans-serif;
+    font-size: 35px !important;
+   
+}
+    
+#heading {
+    text-align: center;
+    font-size: 120px;
+    padding-top: 0%;
+    color:
+        black;
+    font: sans-serif;
+}
+
+
+
+
+/* MODAL */
+
+.modal-title{
+font-size: 16px;
+}
+
+.modal-body {
+    font-size: 20px;
+}
+
+.modal-header{
+    background-color: rgb(221, 221, 221);
+}
+
+.modal-footer{background-color: rgb(221, 221, 221) !important;
+    
+
+}
+
+#modalItemCont{background-color: black;
+    font-size: 12px;
+
+}
+#modalItemCont:hover {
+    background-color: white !important;
+color: black !important;
+}
+
+#modalItem {
+    background-color:white;
+    color: black;
+    font-size: 18px !important;
+
+}
+
+#modalItem:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+.modalDiv{
+    column-gap: 2rem;
+}
+
+
+/* Search Bar */
+
+#divSearchBar{
+    width: 30rem;
+} 
+ 
+/* SIDEBAR */
+
+#offcanvas-header {
+    padding: 0% !important;
+    justify-content: center !important;
+}
+
+ #spinner{
+width: 2rem !important;
+height: 2rem !important;
+ }
+
+ #sideBarPad {
+    padding-right: 0%;
+    background-color: rgb(221, 221, 221);
+
+ }
+
+
+ .selectFilter{
+    width: 12rem !important;
+    border-radius: 0.3rem !important;
+    height: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    
+ }
+
+  .selectFilter:hover {
+     background-color: black;
+     color: white;
+      border-radius: 0.3rem !important;
+  }
+
+
+ /* BUTTONS */
+  
+ #buttonLearn {
+    border: none;
+    padding-top: 0;
+    width: 13rem;
+    height: 3rem;
+    font-size: 30px;
+    background-color: black;
+ }
+
+  #buttonLearn:hover {
+    background-color:rgb(221, 221, 221);
+    color: black;
+    border:solid black 1px !important;
+  }
+
+
+ #buttonFilter{
+    padding-right: 1rem;
+    padding-top: 0;
+    height: 4rem;
+    font-size: 50px;
+    background-color: none !important;
+    cursor: pointer;     
+ }
+
+ #buttonFilter:hover {
+    background-color: none !important;
+   
+ }
+
+ #buttonTop
+ {background-color: rgb(0, 0, 190) !important;
+ }
+
+  #buttonTop:hover {
+      background-color: rgb(61, 61, 247) !important;
+      ;
+  }
+
+   #butClean {
+       background-color: white!important;
+    color: black;
+    border-radius: 0.3rem !important;
+    width: auto;
+    padding: 0%;
+   
+   }
+
+   #butClean:hover {
+    background-color: black !important;
+        color: white; 
+   }
+
+          #butGeo {
+              background-color: white !important;
+              color: black;
+              border-radius: 0.3rem !important;
+            
+              padding: 0%;
+
+          }
+    
+          #butGeo:hover {
+              background-color: black !important;
+              color: white;
+          }
+                  #butGeol{
+                    font-size: 2rem;
+                  }
+
+
+#butDone{
+    background-color: white !important;
+    color: black;
+    border-radius: 0.3rem !important;
+    width: auto;
+}
+
+#refreshIcon{
+    font-size: 2rem;
+}
+
+#butOrder{
+    background-color: white !important;
+        color: black;
+        border-radius: 0.3rem !important;
+        width: auto;
+
+}
+
+#butOrder:hover {
+    background-color: black !important;
+        color: white;
+}
+
+#iconOrder{
+    font-size: 2rem;
+}
+
+#doneIcon {
+    font-size: 3rem;
+}
+
+.modalIcons{font-size: 3rem !important;}
+
+
+
+#butDone:hover {
+    background-color: black !important;
+    color: white;
+    border-radius: 0.3rem !important;
+    width: auto;
+
+}
+
+
+
+
+   #searchBut{
+background-color: black !important;
+color: white;
+   }
+
+    #searchBut:hover {
+            background-color: rgb(221, 221, 221)!important;
+                color: black;
+          }
+ 
+
+/* ACCORDION */
+
+.description {
+    font-size: 18px;
+}
+
+.footprint{
+    text-decoration: underline;
+    padding-bottom: 0.5rem;
+}
+
+
+ .nameSize {
+     font-size: 20px;
+ }
+
+ .infoSize {
+     font-size: 20px;
+ }
+
+ .sourceSize {
+     font-size: 20px;
+ }
+
+ #sideBarAcc {
+    border-top: 10rem !important;
+     padding-right: 0%;
+     background-color: rgb(221, 221, 221);
+     
+
+ }
+
+ .activityTitle{
+    padding-right: 0% !;
+    padding-left: 2rem !important;
+ }
+
+  .categoryTitle {
+    padding-right: 0%;
+     padding-left: 0.5rem !important;
+  }
+   .countryTitle {
+padding-right: 0.5rem !important;
+    padding-left: 0rem !important;
+   }
+     .sourceTitle {
+        padding-right: 2rem !important;
+            padding-left: 0rem;
+        }
+
+
+/* FOOTER */
+
+
+.footerInfo{
+    text-align: center;
+    background-color: rgb(221, 221, 221);
+}
+
+/* Animation */
+
+.logo:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+#titles{
+    padding-top: 2rem;
+    padding-bottom: 0%;
+   
+}
+
+hr{
+    margin-bottom: 0% !important;
+}
+
+/* GOOGLE FONTS */
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 1400px) {
+
+
+    h2 {
+        font-size: 0px !important;
+    }
+
+    #accordionFlushExample {
+        font-size: 20px;
+    }
+
+    .nameSize {
+        font-size: 25px;
+    }
+
+    .infoSize {
+        font-size: 18px;
+    }
+
+    .sourceSize {
+        font-size: 12px;
+    }
+
+    .titlesLine {
+        border: 0;
+    }
+
+    #heading {
+        font-size: 80px !important;
+    }
+
+    #buttonLearn {
+        width: 10rem !important;
+        height: 3rem !important;
+        font-size: 20px !important;
+
+    }
+
+    #divSearchBar {
+        width: 20rem !important;
+    }
+
+    #titles{
+        padding:0%
+    }
+
+    #accordionFlushExample{
+        padding:0.3rem !important;
+    }
+
+.description {
+    font-size: 12px;
+}
+
+.footprint {
+    text-decoration: underline;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    font-size: 16px;
+}
+
+.moreInfo{
+font-size: 12px;
+}
+
+
+}

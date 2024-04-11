@@ -1,0 +1,90 @@
+<!-- company.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="company.css">
+  <title>Company Carbon Footprint Calculator</title>
+  <style>
+    /* Add your custom styles here if needed */
+    .calculator {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <h1>Company Carbon Footprint Calculator</h1>
+    <form id="companyForm">
+      <div class="input-group">
+        <label for="electricityUsage">Electricity Usage (kWh):</label>
+        <input type="number" id="electricityUsage" placeholder="Enter electricity usage">
+      </div>
+
+      <div class="input-group">
+        <label for="naturalGasUsage">Natural Gas Usage (cubic meters):</label>
+        <input type="number" id="naturalGasUsage" placeholder="Enter natural gas usage">
+      </div>
+
+      <div class="input-group">
+        <label for="fleetFuelUsage">Fleet Fuel Usage (liters):</label>
+        <input type="number" id="fleetFuelUsage" placeholder="Enter fleet fuel usage">
+      </div>
+
+      <div class="input-group">
+        <label for="wasteGeneration">Waste Generation (kg per week):</label>
+        <input type="number" id="wasteGeneration" placeholder="Enter waste generation">
+      </div>
+
+      <button type="button" id="calculateBtn">Calculate</button>
+      <button type="button" id="resetBtn">Reset</button>
+    </form>
+
+    <!-- Modal for displaying result and tips -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <div id="modalResult"></div>
+        <div id="modalTips"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="company.js"></script>
+</body>
+</html>

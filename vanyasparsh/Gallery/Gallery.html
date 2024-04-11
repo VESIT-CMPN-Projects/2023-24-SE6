@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="../home/home.css">
+</head>
+
+<body>
+  <nav class="bg-dark">
+    <a href="../home/home.html" style="color: white;">
+      <div class="logo">
+        <div class="nav-logo">
+          <img src="../logo.png" width="40px" height="40px" alt="Logo">
+        </div>
+        <span style="margin-left: 10px"><b>VanyaSparsh</b></span>
+      </div>
+
+    </a>
+    <div class="nav-list">
+      <ul class=>
+        <li><a href="../home/home.html">Home</a></li>
+        <li><a href="../aboutus/aboutus.html">About us</a></li>
+        <!-- <li><a href="../Activity-Footprint-Project/Index.html" target="_blank">Carbon FootPrints</a></li> -->
+
+        <!-- <li><a href="../../Calculators/index.html">CFC</a></li> -->
+
+        <li><a href="../../Login/loginPage.php">CFC</button></li></a>
+
+        <li><a href="../../QUIZ/quiz.html" class="menu-item-link">Quiz</a></li>
+
+        <li class="menu-item has-sub-menu">
+          <a href="" class="menu-item-link">
+            More
+          </a>
+          <ul class="sub-menu">
+            <li class="menu-item">
+              <a href="../Events/events.html" class="menu-item-link">Events</a>
+            </li>
+
+            <li class="menu-item">
+              <a href="../Gallery/Gallery.html" class="menu-item-link">Gallery</a>
+            </li>
+
+            <li class="menu-item">
+              <a href="../contact/contact.html" class="menu-item-link">Contact</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+  <div class="event-gallery">
+    <h1 class="text-center" style="margin: 20px 0px 20px 0px; color: #013A20;;">Previous Events Gallery</h1>
+    <div class="main-container" style="padding: 10px 30px">
+      <h1 class="heading">1. <u>RECYCLOTHON</u></h1>
+      <div class=" grid">
+
+        <img src="plastic1.jpg" alt="image" width="600px" height="400px">
+        <img src="plastic2.jpg" alt="image" width="600px" height="400px">
+        <!-- <img src="plastic3.jpg" alt="image" > -->
+        <img src="plastic4.jpg" alt="image" width="600px" height="400px">
+        <img src="plastic5.png" alt="image" width="600px" height="400px">
+        <img src="plastic6.png" alt="image" width="600px" height="400px">
+        <img src="plastic7.png" alt="image" width="600px" height="400px">
+      </div>
+    </div>
+    <div class="main-container" style="padding: 10px 30px">
+      <h1 class="heading">2. <u>Swacch Bharat Drive</u></h1>
+      <div class="grid">
+
+        <img src="clean1.jpg" alt="image" width="600px" height="400px">
+        <!-- <img src="clean2.jpg" alt="image" width="600px" height="400px"> -->
+        <img src="clean3.jpg" alt="image" width="600px" height="400px">
+        <img src="clean4.jpg" alt="image" width="600px" height="400px">
+        <img src="clean5.jpg" alt="image" width="600px" height="400px">
+      </div>
+    </div>
+
+    <div class="main-container" style="padding: 10px 30px">
+      <h1 class="heading">3. <u>Beach Clean Drive</u></h1>
+      <div class="grid">
+
+        <img src="beach1.jpg" alt="image" width="600px" height="400px">
+        <img src="beach2.jpg" alt="image" width="600px" height="400px">
+        <img src="beach3.jpg" alt="image" width="600px" height="400px">
+        <img src="beach4.jpg" alt="image" width="600px" height="400px">
+        <img src="beach5.jpg" alt="image" width="600px" height="400px">
+        <img src="beach6.jpg" alt="image" width="600px" height="400px">
+      </div>
+    </div>
+    <div class="main-container" style="padding: 10px 30px">
+      <h1 class="heading">4. <u>Tree Plantation Drive</u></h1>
+      <div class="grid">
+
+        <img src="tree1.jpg" alt="image" width="600px" height="400px">
+        <img src="tree2.jpg" alt="image" width="600px" height="400px">
+        <img src="tree3.jpg" alt="image" width="600px" height="400px">
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  const openModalBtn = document.getElementById('openModal');
+  const modal = document.getElementById('modal');
+  const yesBtn = document.getElementById('yesBtn');
+  const noBtn = document.getElementById('noBtn');
+
+  openModalBtn.addEventListener('click', () => {
+    modal.style.display = 'block';
+  });
+
+  yesBtn.addEventListener('click', () => {
+    window.location.href = '../../Calculators/index.html';
+  });
+
+  noBtn.addEventListener('click', () => {
+    window.location.href = '../../Login/loginPage.php';
+  });
+
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+
+</script>
+
+</html>

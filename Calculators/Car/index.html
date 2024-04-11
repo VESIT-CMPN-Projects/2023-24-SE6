@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Carbon Footprint Calculator</title>
+</head>
+
+<body>
+  <div class="calculator">
+    <h1>Car Carbon Footprint Calculator</h1>
+    <form id="carbonForm">
+      <div class="input-group">
+        <label for="carMileage">Car Mileage (miles per gallon):</label>
+        <input type="number" id="carMileage" placeholder="Enter car mileage">
+      </div>
+
+      <div class="input-group">
+        <label for="carDistance">Car Distance (miles):</label>
+        <input type="number" id="carDistance" placeholder="Enter car distance">
+      </div>
+
+      <div class="input-group">
+        <label for="electricityUsage">Electricity Usage (kWh):</label>
+        <input type="number" id="electricityUsage" placeholder="Enter electricity usage">
+      </div>
+
+      <div class="input-group">
+        <label for="airTravelDistance">Air Travel Distance (miles):</label>
+        <input type="number" id="airTravelDistance" placeholder="Enter air travel distance">
+      </div>
+
+      <button type="button" id="calculateBtn">Calculate</button>
+      <button type="button" id="resetBtn">Reset</button>
+    </form>
+
+    <div id="modalResult" class="modal hide">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <div id="result"></div>
+        <div id="tips"></div>
+      </div>
+    </div>
+    
+
+  <script src="index.js"></script>
+</body>
+
+</html>

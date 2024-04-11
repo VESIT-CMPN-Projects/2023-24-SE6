@@ -1,0 +1,300 @@
+body {
+    /* background-color: #cdd193; */
+    background-color: #AFC577;
+}
+
+:root {
+    --dark-color: #333;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.4;
+    color: var(--dark-color);
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+}
+
+.graph {
+    width: 50%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.bg-dark {
+    background-color: #013A20;
+    color: #FFF;
+}
+
+.items {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+}
+
+.title {
+    margin: 40px;
+    text-align: center;
+    color: #013A20;
+    font-size: 40px;
+}
+
+.carimg {
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.compimg {
+    margin-left: 20px;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.fliimg {
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.frieimg {
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.houseimg {
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.button {
+    background-color: #013A20;
+    color: #bacc81;
+    border-radius: 8px;
+    margin-left: 80px;
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.button:hover {
+    background-color: #bacc81;
+    color: #013A20;
+}
+
+
+.bg-dark {
+    background-color: #013A20;
+    color: #FFF;
+}
+
+
+
+/**************************NAV BAR************************************/
+
+nav {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo span {
+    margin-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-logo {
+    height: 40px;
+    width: 40px;
+}
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    padding: 7px 10px;
+    cursor: pointer;
+    /* transition: .3s; */
+    margin: 0 .5rem;
+    color: #FFF;
+}
+
+nav ul li a:hover {
+    background-color: #CDD193;
+    color: #333;
+}
+
+.has-sub-menu {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    background-color: #FFFEFF;
+    display: none;
+}
+
+.sub-menu .menu-item .menu-item-link,
+.sub-menu .menu-item {
+    display: block;
+}
+
+.has-sub-menu:hover .sub-menu {
+    display: block;
+    border: solid 1px #EEE;
+    border-top: none;
+}
+
+.sub-menu .menu-item .menu-item-link:link,
+.sub-menu .menu-item .menu-item-link:visited {
+    color: #111;
+    text-transform: capitalize;
+    font-size: 1rem;
+    padding: 10px 40px 10px 15px;
+}
+
+
+
+/********************Modal**************************/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding-top: 50px;
+    border: 1px solid #888;
+    width: 350px;
+    height: 200px;
+}
+
+.choiceButton {
+    display: flex;
+    padding: 30px 50px;
+    justify-content: space-between;
+}
+
+.choiceBtn {
+    display: flex;
+    justify-content: center;
+    background-color: #013A20;
+    border: none;
+    color: white;
+    padding: 13px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.modal_button {
+    background-color: #013A20;
+    color: white;
+    border: none;
+}
+
+.modal_button:hover {
+    background-color: #CDD193;
+}
+
+
+#openModal button:hover {
+    background-color: #CDD193;
+    color: #333;
+}
+
+.modal-content p {
+    text-align: center;
+    font-size: larger;
+    color: #013A20;
+}
+
+.modal-content button {
+    margin: 5px;
+}
+
+
+.calBlock1{
+    margin: 10px 190px 100px;
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+.calBlock1 > div{
+    width: 250px;
+    height: 250px;
+    /* margin-left: 10px; */
+    display:block;
+}
+
+
+.calBlock2{
+    margin: 10px 350px 100px;
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+.calBlock2 > div{
+    width: 250px;
+    height: 250px;
+    /* margin-left: 10px; */
+}

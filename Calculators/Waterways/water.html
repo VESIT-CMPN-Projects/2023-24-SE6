@@ -1,0 +1,84 @@
+<!-- water.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="water.css">
+  <title>Waterways Carbon Footprint Calculator</title>
+  <style>
+    /* Add your custom styles here if needed */
+    .calculator {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <h1>Waterways Carbon Footprint Calculator</h1>
+    <form id="waterwaysForm">
+      <div class="input-group">
+        <label for="distance">Distance Traveled (km):</label>
+        <input type="number" id="distance" placeholder="Enter distance traveled">
+      </div>
+
+      <div class="input-group">
+        <label for="fuelUsage">Fuel Usage (liters per hour):</label>
+        <input type="number" id="fuelUsage" placeholder="Enter fuel usage">
+      </div>
+
+      <button type="button" id="calculateBtn">Calculate</button>
+      <button type="button" id="resetBtn">Reset</button>
+    </form>
+
+    <!-- Result and Tips in Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <div id="modalResult"></div>
+        <div id="modalTips"></div>
+      </div>
+    </div>
+
+    <div id="result"></div>
+    <div id="tips"></div>
+  </div>
+
+  <script src="water.js"></script>
+</body>
+</html>

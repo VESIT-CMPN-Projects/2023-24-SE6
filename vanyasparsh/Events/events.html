@@ -1,0 +1,189 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../home/home.css">
+<link rel="stylesheet" href="../Events/eventPage.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<nav class="bg-dark">
+  <a href="../home/home.html" style="color: white;">
+    <div class="logo">
+      <div class="nav-logo">
+        <img src="../logo.png" width="40px" height="40px" alt="Logo">
+      </div>
+      <span style="margin-left: 10px"><b>VanyaSparsh</b></span>
+    </div>
+
+  </a>
+  <div class="nav-list">
+    <ul class=>
+      <li><a href="../home/home.html">Home</a></li>
+      <li><a href="../aboutus/aboutus.html">About us</a></li>
+      <!-- <li><a href="../Activity-Footprint-Project/Index.html" target="_blank">Carbon FootPrints</a></li> -->
+
+      <!-- <li><a href="../../Calculators/index.html">CFC</a></li> -->
+
+      <li><a href="../../Login/loginPage.php">CFC</button></li></a>
+      <li><a href="../../QUIZ/quiz.html" class="menu-item-link">Quiz</a></li>
+
+      <li class="menu-item has-sub-menu">
+        <a href="" class="menu-item-link">
+          More
+        </a>
+        <ul class="sub-menu">
+          <li class="menu-item">
+            <a href="../Events/events.html" class="menu-item-link">Events</a>
+          </li>
+
+          <li class="menu-item">
+            <a href="../Gallery/Gallery.html" class="menu-item-link">Gallery</a>
+          </li>
+
+          <li class="menu-item">
+            <a href="../contact/contact.html" class="menu-item-link">Contact</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+<!-- The Tour Section -->
+<!-- style="background-color: rgb(2, 43, 2);" -->
+<div id="tour" style=" background-color: #AFC577" class="events">
+  <div class="w3-container w3-content " style="max-width:800px">
+    <h2 style="color:#013A20" class="w3-wide w3-center"><b>Events</b></h2>
+
+    <div class="w3-row-padding w3-padding-32" >
+      <div class="w3-third w3-margin-bottom"  >
+        <img src="becach.jpg" alt="Dadar" class="w3-hover-opacity; img-size">
+        <div class="w3-container w3-white">
+          <div class="eventContent">
+            <p id="Event1" name="heading_text" style="font-size: 21px;"><b>Beach drive</b></p>
+            <p>Dadar Beach drive</p>
+            <p class="w3-opacity">Fri 7 oct 2023</p>
+  
+            <button class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'; storeHeading('Event1')">Participate
+              Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-third w3-margin-bottom " >
+        <img src="treep.jpg" alt="tree" class="w3-hover-opacity; img-size">
+        <div class="w3-container w3-white">
+         <div class="eventContent">
+            <p id="Event2" name="heading_text" style="font-size: 21px;"><b>Tree Plantation</b></p>
+            <p>VESIT</p>
+            <p class="w3-opacity">Sat 17 Oct 2023</p>
+            <button class="w3-button w3-black w3-margin-bottom"
+            onclick="document.getElementById('ticketModal').style.display='block'; storeHeading('Event2')">Participate
+            Now</button>
+         </div>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom" >
+        <img src="plastic.jpg" alt="Plastic" class="w3-hover-opacity; img-size">
+        <div class="w3-container w3-white">
+          <div class="eventContent">
+            <p id="Event3" name="heading_text" style="font-size: 21px;"><b>Plastic Donation</b></p>
+            <p>VESIT</p>
+            <p class="w3-opacity">Sun 9 Oct 2023</p>
+            <button name="Plastic Donation" class="w3-button w3-black w3-margin-bottom"
+              onclick="document.getElementById('ticketModal').style.display='block'; storeHeading('Event3')">Participate
+              Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ticket Modal -->
+<div id="ticketModal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top w3-card-4">
+    <header class="w3-container w3-teal w3-center w3-padding-32">
+      <span onclick="document.getElementById('ticketModal').style.display='none'"
+        class="w3-button w3-teal w3-xlarge w3-display-topright"></span>
+      <h4 class="w3-wide" style="font-family: sans-serif;"><i class="fa fa-user"></i>Enter Details</h4>
+    </header>
+
+    <div class="w3-container">
+      <form method="post">
+        <label>Name </label>
+        <input class="w3-input w3-border" type="text" placeholder="Enter your Name" name="UserName"><br>
+
+        <label>Email ID</label>
+        <input class="w3-input w3-border" type="text" placeholder="Email Id" name="EmailId"><br>
+
+        <!-- <label>Phone Number</label>
+        <input class="w3-input w3-border" type="tel" placeholder="Enter Phone Number" name="PhoneNo"><br> -->
+
+        <input type="hidden" name="heading_text">
+
+        <button onclick="storeData()" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PARTICIPATE<i
+            class="fa fa-check"></i></button>
+
+        <button class="w3-button w3-red w3-section"
+          onclick="document.getElementById('ticketModal').style.display='none'">Close <i
+            class="fa fa-remove"></i></button>
+        <!-- <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p> -->
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- 
+<script>
+  function storeHeading(id) {
+    var headingText = document.getElementById(id).innerText;
+    $.ajax({
+      type: "POST",
+      // url: "./eventHeading.php",
+      data: { heading_text: headingText },
+      success: function (response) {
+        alert(response);
+      }
+    });
+    // console.log(headingText);
+  }
+
+
+</script> -->
+
+<script>
+
+  var headingText;
+  function storeHeading(id) {
+    headingText = document.getElementById(id).innerText;
+  }
+
+  function storeData() {
+    var formData = {
+      UserName: document.getElementsByName('UserName')[0].value,
+      EmailId: document.getElementsByName('EmailId')[0].value,
+      // PhoneNo: document.getElementsByName('PhoneNo')[0].value
+    };
+
+    var postData = {
+      heading_text: headingText,
+      form_data: formData
+    };
+
+    console.log(headingText);
+    console.log(formData);
+    $.ajax({
+      type: "POST",
+      url: "./eventHeading.php",
+      data: postData,
+      success: function (response) {
+        alert(response);
+      },
+      error: function (xhr, status, error) {
+        console.error(xhr.responseText);
+      }
+    });
+  }
+
+</script>

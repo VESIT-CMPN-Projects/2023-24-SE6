@@ -1,0 +1,21 @@
+body{
+    background-color: #AFC577;
+}
+.main-container{
+    width: 100%;
+}
+.grid{
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+.grid > img{
+    position: relative;
+    width: 100%;
+}
+
+.heading{
+    font-size: 30px;
+    color: #013A20;;
+}

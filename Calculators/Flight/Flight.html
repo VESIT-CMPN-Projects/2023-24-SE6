@@ -1,0 +1,58 @@
+<!-- flight.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="flight.css">
+  <title>Flight Carbon Footprint Calculator</title>
+</head>
+<body>
+  <div class="calculator">
+    <h1>Flight Carbon Footprint Calculator</h1>
+    <form id="flightForm">
+      <div class="input-group">
+        <label for="flightDistance">Flight Distance (kilometers):</label>
+        <input type="number" id="flightDistance" placeholder="Enter flight distance" min="1">
+      </div>
+
+      <div class="input-group">
+        <label for="passengers">Number of Passengers:</label>
+        <input type="number" id="passengers" placeholder="Enter number of passengers" min="1">
+      </div>
+
+      <div class="input-group">
+        <label for="flightClass">Flight Class:</label>
+        <select id="flightClass">
+          <option value="economy">Economy</option>
+          <option value="business">Business</option>
+          <option value="first">First Class</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="aircraftType">Aircraft Type:</label>
+        <select id="aircraftType">
+          <option value="small">Small Aircraft</option>
+          <option value="medium">Medium Aircraft</option>
+          <option value="large">Large Aircraft</option>
+        </select>
+      </div>
+
+      <button type="button" id="calculateBtn">Calculate</button>
+      <button type="button" id="resetBtn">Reset</button>
+    </form>
+
+    <!-- Result in Modal -->
+    <div id="myModal" class="modal hide">
+      <div class="modal-content" id="modalContent">
+        <span class="close" id="closeModal">&times;</span>
+        <div id="modalResult"></div>
+        <div id="modalTips"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="flight.js"></script>
+</body>
+</html>

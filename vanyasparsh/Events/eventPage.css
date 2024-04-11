@@ -1,0 +1,78 @@
+/* .image1{
+    height:300px;
+}
+ */
+
+
+/* body{
+    background-image: url('gradient.png');
+} */
+
+
+.img-size{
+    width: 235;
+    height: 200px;
+}
+
+.eventContent{
+    margin: 20px 0px;
+}
+.eventContent p{
+    margin: 3px;
+    text-align: center;
+}
+
+/* eventsPage.css */
+
+/* Add this CSS to center the button */
+.eventContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text horizontally */
+  }
+  
+  /* Add this CSS to style the button */
+  .eventContent button {
+    margin-top: 10px; 
+  }
+
+  .w3-padding-32 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.w3-teal, .w3-hover-teal:hover {
+    color: #fff !important;
+    background-color:#013A20 !important;
+}
+
+.w3-section{
+    /* margin-top: 16px !important; */
+    margin-bottom: 16px !important;
+}
+
+.w3-red{
+    background-color:#013A20 !important;
+
+}
+.events{
+    padding:30px 0 15px;
+}
+
+form{
+    margin-top:20px;
+}
+
+.w3-input {
+    margin-top: 5px;
+}
+
+.w3-black, .w3-hover-black:hover {
+    color: #fff !important;
+    background-color: rgb(2, 43, 2)  !important;
+}
+
+.eventContebt > button:hover{
+    opacity: 0.8;
+}
